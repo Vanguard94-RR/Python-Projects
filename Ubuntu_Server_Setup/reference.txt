@@ -1,0 +1,8 @@
+#change puppet enviroment
+sudo /opt/puppetlabs/bin/puppet config set --environment=<env_name>
+
+# execute puppet update
+sudo /opt/puppetlabs/bin/puppet agent --test
+
+#install puppet module into diffrent enviroment
+sudo /opt/puppetlabs/bin/puppet module install <module_name> --environment <env_name>
